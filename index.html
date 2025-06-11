@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>UPI Payment</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+
+  <nav class="sidebar" id="sidebar">
+    <ul>
+      <li onclick="handleMenuClick('upi.png', event)"><a href="#">Main Menu</a></li>
+      <li onclick="handleMenuClick('https://envs.sh/OHV.png', event)"><a href="#">Binance</a></li>
+      <li onclick="handleMenuClick('https://envs.sh/OHy.png', event)"><a href="#">Bitcoin</a></li>
+      <li onclick="handleMenuClick('https://envs.sh/OHX.png', event)"><a href="#">USDT</a></li>
+      <li onclick="handleMenuClick('https://envs.sh/OHM.png', event)"><a href="#">TON</a></li>
+      <li onclick="handleMenuClick('https://envs.sh/OHr.jpg', event)"><a href="#">UPI</a></li>
+    </ul>
+  </nav>
+
+  <div class="container">
+    <h1>Scan to Pay</h1>
+    <img src="upi.png" alt="UPI QR Code" class="upi-img" id="mainImage" />
+    <a href="upi.png" download="upi-qr-code.png" class="download-btn" id="downloadLink">Download QR</a>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
