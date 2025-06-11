@@ -1,0 +1,90 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f0f2f5;
+  margin: 0;
+  padding: 0;
+}
+
+.menu-toggle {
+  font-size: 24px;
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  background: #333;
+  color: #fff;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  z-index: 1001;
+}
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: -250px;
+  width: 250px;
+  height: 100%;
+  background-color: #111;
+  overflow-y: auto;
+  transition: 0.3s ease;
+  padding-top: 60px;
+  z-index: 1000;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sidebar ul li {
+  padding: 12px 20px;
+  border-bottom: 1px solid #333;
+  cursor: pointer;
+}
+
+.sidebar ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  display: block;
+  width: 100%;
+}
+
+.sidebar.active {
+  left: 0;
+}
+
+.container {
+  text-align: center;
+  padding: 50px 20px 40px;
+  transition: padding 0.3s ease;
+}
+
+.container h1 {
+  font-size: 32px;
+  color: #333;
+}
+
+.upi-img {
+  max-width: 300px;
+  width: 100%;
+  margin: 20px 0;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.download-btn {
+  background-color: #0078d4;
+  color: white;
+  padding: 12px 20px;
+  text-decoration: none;
+  border-radius: 6px;
+  display: inline-block;
+  font-weight: bold;
+}
+
+.download-btn:hover {
+  background-color: #005fa3;
+}
